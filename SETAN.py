@@ -103,7 +103,7 @@ def login():
             except requests.exceptions.ConnectionError:
                 print '\n\x1b[1;91m[!] Tidak ada koneksi'
                 keluar()
-
+ 
         if 'checkpoint' in url:
             print '\n\x1b[1;91m[!] \x1b[1;93mAkun kena Checkpoint'
             os.system('rm -rf login.txt')
